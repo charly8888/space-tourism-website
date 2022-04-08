@@ -1,0 +1,45 @@
+
+.art{
+  width: 27.8125rem;
+  height: auto;
+  /* background-color: gray; */
+  position: absolute;
+  left: 52rem;
+  top: 22rem;
+}
+.planet{
+  width:27.8125rem;
+  position: absolute;
+  top:21.4375rem;
+  left:14.375rem;
+}
+.text{
+  letter-spacing: 0;
+  margin-bottom: 4rem;
+}
+.section{
+  width:100%;
+  border-top: 1px solid #383B4B;
+
+}
+.subheading2{
+  font-family: 'Barlow Condensed'; 
+  font-size: 0.875rem;
+  letter-spacing: 0.146875rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.subheading1{
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight:normal;
+  margin: .8rem 0;
+  
+}
+.section article{
+  display: inline-block;
+  margin: 1rem 5rem 0 0;
+}
+.section article:last-child{
+  margin:0
+}

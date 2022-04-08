@@ -1,4 +1,4 @@
-{
+export const datos = {
   "destinations": [
     {
       "name": "Moon",
