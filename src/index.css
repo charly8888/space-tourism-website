@@ -41,6 +41,7 @@ h3{
   font-size: 3.5rem;
   font-weight:normal;
   margin:0;
+  text-transform: uppercase;
 }
 h4{
   margin:0;
@@ -49,7 +50,7 @@ h4{
 }
 h5{
   margin:0 0 1.5rem 0 ;
-  font-family: 'Barlow ';
+  font-family: 'Barlow Condensed';
   font-size: 1.75rem;
   font-weight:normal;
   text-transform: uppercase;

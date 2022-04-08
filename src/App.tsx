@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./HomePage";
-import  {Technology, Crew, Destination, Moon, Mars, Titan, Europa }  from "./pages";
+import  {Technology, Crew, Destination, Moon, Mars, Titan, Europa, LaunchVehicle, SpaceCapsule, Spaceport }  from "./pages";
 import Aaa from './pages/crew/Aaa';
 import Ddd from "./pages/crew/Ddd";
 import Sss from "./pages/crew/Sss";
@@ -21,7 +21,11 @@ function App() {
         <Route path="a" element={<Aaa/>} />
         <Route path="s" element={<Sss/>} />
       </Route>
-      <Route path="/tech" element={<Technology/>} />
+      <Route path="/tech" element={<Technology/>} >
+        <Route path="vehicle" element={<LaunchVehicle />} />
+        <Route path="capsule" element={<SpaceCapsule/>} />
+        <Route path="spaceport" element={<Spaceport/>} />
+      </Route>
       <Route path="*" element={
         <main style={{ padding: "1rem" }}>
           <p>There's nothing here!</p>
