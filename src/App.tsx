@@ -1,30 +1,28 @@
 import { Route, Routes } from "react-router-dom";
+import { CrewLayouts, DestinationLayouts, TechLayouts } from "./components/layouts";
 import HomePage from "./HomePage";
-import  {Technology, Crew, Destination, Moon, Mars, Titan, Europa, LaunchVehicle, SpaceCapsule, Spaceport }  from "./pages";
-import Aaa from './pages/crew/Aaa';
-import Ddd from "./pages/crew/Ddd";
-import Sss from "./pages/crew/Sss";
-
+import  {Technology, Crew, Destination}  from "./pages";
 function App() {
 
   return (
     <Routes>
       <Route path="/" element={<HomePage/>} />
       <Route path="/destination" element={<Destination/>} >
-        <Route path="moon" element={<Moon />} />
-        <Route path="mars" element={<Mars/>} />
-        <Route path="europa" element={<Europa/>} />
-        <Route path="titan" element={<Titan/>} />
+        <Route path="moon" element={<DestinationLayouts number={0}/>} />
+        <Route path="mars" element={<DestinationLayouts number={1}/>} />
+        <Route path="europa" element={<DestinationLayouts number={2}/>} />
+        <Route path="titan" element={<DestinationLayouts number={3}/>} />
       </Route>
       <Route path="/crew" element={<Crew/>} >
-        <Route path="d" element={<Ddd />} />
-        <Route path="a" element={<Aaa/>} />
-        <Route path="s" element={<Sss/>} />
+        <Route path="douglas" element={<CrewLayouts number={0}/>} />
+        <Route path="mark" element={<CrewLayouts number={1}/>} />
+        <Route path="victor" element={<CrewLayouts number={2}/>} />
+        <Route path="anousheh" element={<CrewLayouts number={3}/>} />
       </Route>
       <Route path="/tech" element={<Technology/>} >
-        <Route path="vehicle" element={<LaunchVehicle />} />
-        <Route path="capsule" element={<SpaceCapsule/>} />
-        <Route path="spaceport" element={<Spaceport/>} />
+        <Route path="vehicle" element={<TechLayouts number={0}/>} />
+        <Route path="capsule" element={<TechLayouts number={1}/>} />
+        <Route path="spaceport" element={<TechLayouts number={2}/>} />
       </Route>
       <Route path="*" element={
         <main style={{ padding: "1rem" }}>

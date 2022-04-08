@@ -1,19 +1,11 @@
 import { datos } from '../../../helpers/data';
 import css from './destinationlayouts.module.css'
 
-const images = {
-  0 : "../../../assets/destination/image-moon.webp",
-  1: "../../../assets/destination/image-mars.webp",
-  2: "../../../assets/destination/image-europa.webp",
-  3: "../../../assets/destination/image-titan.webp",
-}
-
-
 export const DestinationLayouts = ({number}) => {
-  const {name, description, distance,travel} = datos.destinations[number]
+  const {name, description, distance,travel, images} = datos.destinations[number]
 
   return (<>
-  <img src={images[number]} alt={name} className={css.planet}/>
+  <img src={images.webp} alt={name} className={css.planet}/>
     <article className={css.art}>
       <h2>{name}</h2>
       <p className={css.text}>{description}</p>

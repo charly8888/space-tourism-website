@@ -12,7 +12,7 @@ const Navbar = () => {
               };
             }} to="/" className={css.navlink}><span>00</span> Home</NavLink>
         <NavLink to="/destination/moon"><span>01</span> Destination</NavLink>
-        <NavLink to="/crew/a"><span>02</span>  Crew</NavLink>
+        <NavLink to="/crew/douglas"><span>02</span>  Crew</NavLink>
         <NavLink to="/tech/vehicle"><span>03</span> Technology</NavLink>
 
 

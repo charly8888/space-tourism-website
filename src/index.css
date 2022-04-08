@@ -47,6 +47,8 @@ h4{
   margin:0;
   font-size: 2rem;
   font-weight:normal;
+  text-transform: uppercase;
+  color: #8F9095;
 }
 h5{
   margin:0 0 1.5rem 0 ;
