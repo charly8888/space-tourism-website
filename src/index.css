@@ -1,4 +1,6 @@
 @import '../modern-normalize.css';
+@import './marcadorNavBarGlobal.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');

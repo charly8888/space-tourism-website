@@ -9,7 +9,7 @@ export const TechLayouts = ({number}) => {
     <img src={images.portrait} alt={name} className={css.planet}/>
     <article className={css.article}>
       <h6 className={css.subheading2}>The terminology...</h6>
-      <h3>{name}</h3>
+      <h3 className={css.h3}>{name}</h3>
       <p className={css.text}>{description}</p>
     </article>  
   </>

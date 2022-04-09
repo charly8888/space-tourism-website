@@ -1,0 +1,14 @@
+
+.navlink.active{
+  border-bottom: 0.2rem solid #fff !important;
+}
+.linktech.active{
+  background-color: #fff !important;
+  color: #0B0D17 !important;
+}
+.linkcrew.active{
+  background-color: #fff !important;
+}
+.navLinkPlanets.active{
+  border-bottom: 0.2rem solid #fff
+}
