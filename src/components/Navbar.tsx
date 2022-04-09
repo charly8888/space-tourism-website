@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import css from './navbar.module.sass'
-import { CustomLink } from '../../helpers/CustomLink';
 const Navbar = () => {
  
   return (
