@@ -2,7 +2,11 @@
 import { datos } from '../../../helpers/data';
 import css from './techlayouts.module.sass'
 
-export const TechLayouts = ({number}) => {
+export type Number = {
+    number: number
+}
+
+export const TechLayouts = ({number}:Number) => {
   const {name, description,images} = datos.technology[number]
 
   return (<>

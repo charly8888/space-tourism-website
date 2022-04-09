@@ -1,7 +1,8 @@
 import css from './crewlayouts.module.sass'
 import { datos } from '../../../helpers/data';
+import { Number } from './TechLayouts';
 
-export const CrewLayouts = ({number}) => {
+export const CrewLayouts = ({number}:Number) => {
   const {name, images, role,bio} = datos.crew[number]
 
   return (<>

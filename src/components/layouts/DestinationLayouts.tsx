@@ -1,7 +1,8 @@
 import { datos } from '../../../helpers/data';
 import css from './destinationlayouts.module.css'
+import { Number } from './TechLayouts';
 
-export const DestinationLayouts = ({number}) => {
+export const DestinationLayouts = ({number}:Number) => {
   const {name, description, distance,travel, images} = datos.destinations[number]
 
   return (<>
