@@ -53,6 +53,7 @@
     display: flex
     justify-content: end
     align-items: center
+    position: absolute
     overflow: hidden
   .span
     display: inline-block
@@ -66,12 +67,12 @@
     top: 1.5rem
     right: 1.5rem
     width: 3rem
-    height: 3rem
+    height: 2.5rem
     background-color: transparent
     border: none
     background-image: url('/assets/shared/icon-hamburger.svg')
     background-repeat: no-repeat
-    background-size: 1.1875rem
+    background-size: 1.5rem
     background-position: center right
     z-index: 1000
   .img
@@ -80,8 +81,8 @@
     top: 1.5rem
     left: 1.5rem
     z-index: 100
+    width: 2.5rem
   .nav
-    background-color: rgba(0, 0, 0, 0.7)
     height: 100%
     display: block
     width: 15.875rem
@@ -91,6 +92,7 @@
     position: absolute
     z-index: 2
     right: 0
+    background-color: rgba(0, 0, 0, 0.7)
     &:after
       content: ""
       display: none

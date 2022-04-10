@@ -4,5 +4,28 @@
   position:absolute;
   top:24.1875rem;
   left:10.3125rem;
-  /* background-color: grey; */
+}
+
+@media (max-width:376px) {
+  .containerText{
+    text-align: center;
+    width:20.4375rem;
+    /* background-color: green; */
+    position: absolute;
+    height: 23.875rem;
+    overflow: hidden;
+    inset: 0;
+    margin: 7rem  auto 0;
+  }
+  .containerText h5{
+    font-size: 1rem;
+    letter-spacing:2.7px
+  }
+  .containerText h1{
+    font-size: 5rem;
+  }
+  .containerText p{
+    font-size: 0.9375rem ;
+    line-height:1.5625rem;
+  }
 }
