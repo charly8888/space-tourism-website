@@ -15,13 +15,23 @@ const Navbar:FC = () => {
     e.stopPropagation();
     setNavbar(!navbar);
   }
-  const colorForMozilla =  () => navigator.userAgent.search("Firefox") && "rgba(0, 0, 0, 0.8)" 
+  const [esMozilla, setEsMozilla] = useState(false)
+
+  useEffect(() => {
+    const mox = navigator.userAgent.search("Firefox")
+    setEsMozilla( mox > 1 )
+      return ()=>{
+        setEsMozilla( false )
+      }
+  }, [])
+  console.log(esMozilla)
+  const colorForMozilla =  esMozilla && "rgba(0, 0, 0, 0.8)" 
   if (useWidth() <= 376) {
     return<>
         <img src="../../assets/shared/logo.svg" alt="logo" className={css.img}/>
         { navbar ? (
         <header className={css.header} onClick={()=>setNavbar(navbar?!navbar:navbar)}>
-          <nav style={{backgroundColor:`${colorForMozilla()}` }} className={`${css.nav} ${css[openOrNot]}` }>
+          <nav style={{backgroundColor:`${colorForMozilla}` }} className={`${css.nav} ${css[openOrNot]}` }>
             <span className={css.span} onClick={handleClickStopPropagation }></span>
               <NavLink  to="/" className="navlink" onClick={handleClickStopPropagation } ><span>00</span> Home</NavLink>
               <NavLink  to="/destination"  className="navlink" onClick={handleClickStopPropagation }><span>01</span> Destination</NavLink>
