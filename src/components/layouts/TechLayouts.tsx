@@ -11,7 +11,9 @@ export const TechLayouts = ({number}:Number) => {
 
   return (<>
     <img src={images.portrait} alt={name} className={css.planet}/>
-    <img src={images.landscape} alt={name} className={css.planetMobile}/>
+    <div className={css.containerImagen}> 
+      <img src={images.landscape} alt={name} className={css.planetMobile}/>
+    </div>
     <article className={css.article}>
       <h6 className={css.subheading2}>The terminology...</h6>
       <h3 className={css.h3}>{name}</h3>

@@ -10,8 +10,9 @@
     border-radius: 50%
     border: 1px solid #4D4E56
     text-align: center
-    line-height: 5rem
+    line-height: 4.875rem
     margin: 0 0 2rem 0
+    letter-spacing:-1px
     font-size: 2rem
     &:hover
       border: 1px solid #fff
@@ -24,3 +25,21 @@
 @media (max-width:376px)
   .main
     background-image: url('/assets/technology/background-technology-mobile.jpg')
+  .nav
+    position: absolute
+    display: flex
+    flex-direction: row
+    left: 50%
+    transform: translate(-50%)
+    top: 21.4375rem
+    a
+      width: 2.5rem
+      background: transparent
+      border-radius: 50%
+      border: 1px solid #4D4E56
+      text-align: center
+      line-height: 2.375rem
+      margin: 0 .5rem
+      font-size: 1rem
+      &:hover
+        border: 1px solid #fff

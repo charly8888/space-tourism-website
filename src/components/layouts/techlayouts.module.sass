@@ -22,8 +22,35 @@
 @media (max-width:376px)
   .planet
     display: none
-  .planetMobile
-    display: block
+  .containerImagen
     position: relative
-    width: 100vw
+    width: 100%
+    overflow: hidden
     top: 8.6875rem
+    height: 10.625rem
+    // background-size: cover
+  .planetMobile
+    height: 100%
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    display: block
+  .article
+    // background: green
+    text-align: center
+    max-width: 20.4375rem
+    position: absolute
+    overflow: hidden
+    inset: 0
+    margin: 25.5625rem auto 0
+    .subheading2
+      font-family: 'Barlow Condensed'
+      font-size: .875rem
+      letter-spacing: 0.1475rem
+      text-transform: uppercase
+      margin: 0 0 1rem 0
+    .h3
+      font-size: 1.5rem
+  .text
+    font-size: 0.9375em
+    line-height: 1.5625
