@@ -5,9 +5,9 @@ import TextHome from "./components/TextHome"
 
 const HomePage = () => {
   return <>
-    <Navbar />
     <TextHome />
     <Link to="/" className="explore">EXPLORE</Link>
+    <Navbar />
   </>
   
 }

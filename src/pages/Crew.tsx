@@ -4,7 +4,6 @@ import css from "./crew.module.sass"
 import globalcss from "./globalPagesStyles.module.sass"
 export const Crew = () => {
   return (<main className={css.main}>
-    <Navbar/>
     <h5 className={globalcss.h5}><span>02</span> Meet your crew</h5>
     <nav className={css.nav}>
       <NavLink className="linkcrew" to="/crew" end></NavLink>
@@ -13,6 +12,7 @@ export const Crew = () => {
       <NavLink className="linkcrew" to="anousheh"></NavLink>
     </nav>
     <Outlet/>
+    <Navbar/>
   </main>
   )
 }

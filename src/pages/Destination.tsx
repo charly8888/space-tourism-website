@@ -6,7 +6,6 @@ import globalcss from "./globalPagesStyles.module.sass"
 
 export const Destination = () => {
   return (<main className={css.main}>
-    <Navbar/>
     <h5 className={globalcss.h5}><span>01</span> pick your destination</h5>
     <nav className={css.nav}>
       <NavLink className="navLinkPlanets" to="/destination" end >MOON</NavLink>
@@ -15,6 +14,7 @@ export const Destination = () => {
       <NavLink className="navLinkPlanets" to="titan">TITAN</NavLink>
     </nav>
     <Outlet />  
+    <Navbar/>
   </main>
   )
 }
