@@ -14,3 +14,8 @@
 .navLinkPlanets.active{
   border-bottom: 0.2rem solid #fff
 }
+@media (max-width:376px){
+  .navlink.active{
+    border: none !important;
+  }
+}

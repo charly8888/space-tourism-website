@@ -1,5 +1,5 @@
 .header
-  width: 100%
+  width: calc(100% - 2.5rem)
   height: 2rem
   position: relative
   height: 6rem
@@ -23,8 +23,14 @@
   align-items: center
   justify-content: space-evenly
   position: relative
-  transition: all 1s
-
+  transition: all .5s
+  &:after
+    content: ""
+    width: 30rem
+    height: 1px
+    background-color: rgba(102, 96, 96, 0.5)
+    position: absolute
+    left: -28rem
   a
     display: inline-block
     margin: 0
@@ -33,19 +39,59 @@
     border-top: 0.2rem solid transparent
     &:hover
       border-bottom: 0.2rem solid #9DA3AD
-  &:after
-    content: ""
-    width: 30rem
-    height: 1px
-    background-color: rgba(102, 96, 96, 0.5)
-    position: absolute
-    left: -28rem
 .text
   letter-spacing: 0
+.button
+  display: none
 
-// .containerLink
-//   height: 100%
-//   display: grid
-//   place-content: center
-//   &:hover
-//     border-bottom: .5rem solid #9DA3AD
+@media (max-width:376px)
+  .button
+    display: block
+    position: absolute
+    top: 1.5rem
+    right: 1.5rem
+    width: 3rem
+    height: 3rem
+    background-color: transparent
+    border: none
+    background-image: url(assets/shared/icon-hamburger.svg)
+    background-repeat: no-repeat
+    background-size: 1.1875rem
+    background-position: center right
+    z-index: 100
+  .img
+    position: absolute
+    left: 0
+    top: 1.5rem
+    left: 1.5rem
+    z-index: 100
+  .nav
+    background-color: rgba(0, 0, 0, 0.7)
+    height: 100%
+    display: block
+    width: 15.875rem
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    position: absolute
+    z-index: 2
+    right:0
+    &:after
+      content: ""
+      display: none
+    a
+      display: block
+      // text-align: center
+      margin: 0 0 0 2rem
+      line-height:3rem
+      // border-bottom: 0.2rem solid transparent
+      // border-top: 0.2rem solid transparent
+      border: none
+      &:hover
+        border: none
+      &:first-child
+        margin-top:7.375rem
+  .close
+    left: -15.875rem
+  .cruz
+    background-image: url(assets/shared/icon-close.svg)
