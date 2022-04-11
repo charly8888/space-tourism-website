@@ -5,8 +5,34 @@
   top:24.1875rem;
   left:10.3125rem;
 }
+@media ( min-width: 376px ) and ( max-width: 768px ){
+  .containerText{
+    text-align: center;
+    width:28.125rem;
+    position: absolute;
+    height: 23.875rem;
+    overflow: hidden;
+    inset: 0;
+    top: 12.625rem;
+    margin: 0 auto ;
+  }
+  .containerText h5{
+    font-size: 1.25rem;
+    letter-spacing:0.21125rem;
+    color:#D0D6F9
+  }
+  .containerText h1{
+    font-size: 9.375rem;
 
-@media (max-width:376px) {
+  }
+  .containerText p{
+    font-size:1rem ;
+    color: #D0D6F9;
+    line-height:1.75rem;
+    margin: 0;
+  }
+}
+@media (max-width:375px) {
   .containerText{
     text-align: center;
     width:20.4375rem;
@@ -19,13 +45,15 @@
   }
   .containerText h5{
     font-size: 1rem;
-    letter-spacing:2.7px
+    letter-spacing:2.7px;
+    color:#D0D6F9
   }
   .containerText h1{
     font-size: 5rem;
   }
   .containerText p{
     font-size: 0.9375rem ;
+    color: #D0D6F9;
     line-height:1.5625rem;
   }
 }

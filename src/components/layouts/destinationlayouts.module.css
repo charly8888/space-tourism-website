@@ -44,7 +44,7 @@
   margin:0
 }
 
-@media (max-width:376px){
+@media (max-width:375px){
   .planet{
     width: 10.625rem;
     inset: 0; 
