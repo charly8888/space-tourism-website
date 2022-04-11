@@ -7,16 +7,15 @@ import { useWidth } from '../../hooks/useWidth';
 const Navbar:FC = () => {
   const {navbar, setNavbar} = useContext(navbarContext)
   const openOrNot = navbar ? 'open' : 'close'
+  const [esMozilla, setEsMozilla] = useState(false)
 
-  const handleClickStopPropagation =(e:React.MouseEvent) => {
+  const StopPropagation =(e:React.MouseEvent) => {
     e.stopPropagation();
   }
   const handleClick = (e:React.MouseEvent<HTMLButtonElement>) => {
     e.stopPropagation();
     setNavbar(!navbar);
   }
-  const [esMozilla, setEsMozilla] = useState(false)
-
   useEffect(() => {
     const mox = navigator.userAgent.search("Firefox")
     setEsMozilla( mox > 1 )
@@ -24,20 +23,20 @@ const Navbar:FC = () => {
         setEsMozilla( false )
       }
   }, [])
-  console.log(esMozilla)
   const colorForMozilla =  esMozilla && "rgba(0, 0, 0, 0.8)" 
+
   if (useWidth() <= 376) {
     return<>
         <img src="../../assets/shared/logo.svg" alt="logo" className={css.img}/>
         { navbar ? (
         <header className={css.header} onClick={()=>setNavbar(navbar?!navbar:navbar)}>
           <nav style={{backgroundColor:`${colorForMozilla}` }} className={`${css.nav} ${css[openOrNot]}` }>
-            <span className={css.span} onClick={handleClickStopPropagation }></span>
-              <NavLink  to="/" className="navlink" onClick={handleClickStopPropagation } ><span>00</span> Home</NavLink>
-              <NavLink  to="/destination"  className="navlink" onClick={handleClickStopPropagation }><span>01</span> Destination</NavLink>
-              <NavLink  to="/crew" className="navlink" onClick={handleClickStopPropagation }><span>02</span>  Crew</NavLink>
-              <NavLink  to="/tech" className="navlink" onClick={handleClickStopPropagation }><span>03</span> Technology</NavLink>
-            <span className={css.span} onClick={handleClickStopPropagation }></span>
+            <span className={css.span} onClick={StopPropagation }></span>
+              <NavLink  to="/" className="navlink" onClick={StopPropagation } ><span>00</span> Home</NavLink>
+              <NavLink  to="/destination"  className="navlink" onClick={StopPropagation }><span>01</span> Destination</NavLink>
+              <NavLink  to="/crew" className="navlink" onClick={StopPropagation }><span>02</span>  Crew</NavLink>
+              <NavLink  to="/tech" className="navlink" onClick={StopPropagation }><span>03</span> Technology</NavLink>
+            <span className={css.span} onClick={StopPropagation }></span>
           </nav>
         </header>) : ""}
       <button className={`${css.button} ${css[navbar ? "cruz" : ""]}`} onClick={handleClick}></button>
@@ -47,12 +46,12 @@ const Navbar:FC = () => {
       <header className={css.header}  onClick={()=>setNavbar(navbar?!navbar:navbar) }>
           <img src="../../assets/shared/logo.svg" alt="logo" className={css.img}/>
           <nav className={`${css.nav} ${css[openOrNot]}`}>
-            <span className={css.span} onClick={handleClickStopPropagation }></span>
-              <NavLink  to="/" className="navlink" onClick={handleClickStopPropagation } ><span>00</span> Home</NavLink>
-              <NavLink  to="/destination"  className="navlink" onClick={handleClickStopPropagation }><span>01</span> Destination</NavLink>
-              <NavLink  to="/crew" className="navlink" onClick={handleClickStopPropagation }><span>02</span>  Crew</NavLink>
-              <NavLink  to="/tech" className="navlink" onClick={handleClickStopPropagation }><span>03</span> Technology</NavLink>
-            <span className={css.span} onClick={handleClickStopPropagation }></span>
+            <span className={css.span} onClick={StopPropagation }></span>
+              <NavLink  to="/" className="navlink" onClick={StopPropagation } ><span>00</span> Home</NavLink>
+              <NavLink  to="/destination"  className="navlink" onClick={StopPropagation }><span>01</span> Destination</NavLink>
+              <NavLink  to="/crew" className="navlink" onClick={StopPropagation }><span>02</span>  Crew</NavLink>
+              <NavLink  to="/tech" className="navlink" onClick={StopPropagation }><span>03</span> Technology</NavLink>
+            <span className={css.span} onClick={StopPropagation }></span>
           </nav>
         </header> 
         <button className={`${css.button} ${css[navbar ? "cruz" : ""]}`} onClick={handleClick}></button>

@@ -1,21 +1,25 @@
 
 .navlink.active{
-  border-bottom: 0.2rem solid #fff !important;
+  border-bottom: 0.2rem solid #fff ;
 }
 .linktech.active{
-  background-color: #fff !important;
-  color: #0B0D17 !important;
-  
+  background-color: #fff ;
+  color: #0B0D17 ;
+
   border: 1px solid #fff
 }
 .linkcrew.active{
-  background-color: #fff !important;
+  background-color: #fff ;
 }
 .navLinkPlanets.active{
   border-bottom: 0.2rem solid #fff
 }
 @media (max-width:376px){
   .navlink.active{
-    border: none !important;
+    border: none ;
+  }
+  .navLinkPlanets.active{
+    border-bottom: 0.2rem solid #fff;
+    color: #fff;
   }
 }

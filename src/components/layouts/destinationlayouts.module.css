@@ -43,3 +43,40 @@
 .section article:last-child{
   margin:0
 }
+
+@media (max-width:376px){
+  .planet{
+    width: 10.625rem;
+    inset: 0; 
+    margin: 8.6875rem auto; 
+    
+  }
+  .art{
+    width: 20.4375rem;
+    height: auto;
+    /* background-color: gray; */
+    text-align: center;
+    inset: 0;
+    top: 24.25rem;
+
+    margin: 0 auto;
+  }
+  .art h2{
+    font-size:3.5rem;
+    line-height:auto
+  }
+  .text{
+    letter-spacing: 0;
+    margin: 0 0 1.6rem 0;
+    font-size: 0.9375rem;
+    line-height:1.5625rem;
+    color:#D0D6F7
+  }
+  .section article{
+    margin:2rem 0 ;
+    width: 100%;
+  }
+  .subheading2{
+    color:#D0D6F7
+  }
+}
