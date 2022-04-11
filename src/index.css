@@ -121,3 +121,8 @@ p{
     letter-spacing:1.25px;
   }
 }
+@media (min-width: 1441px){
+  :root {
+    font-size:18px
+  }
+}
