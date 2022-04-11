@@ -1,3 +1,7 @@
+.main
+  height: 100vh
+  background-image: url('/assets/destination/background-destination-desktop.jpg')
+  background-size: cover
 .nav
   position: absolute
   top: 17.375rem
@@ -10,11 +14,29 @@
     border-top: 0.2rem solid transparent
     &:hover
       border-bottom: 0.2rem solid #9DA3AD
-.main
-  height: 100vh
-  background-image: url('/assets/destination/background-destination-desktop.jpg')
-  background-size: cover
 
+@media ( min-width: 376px ) and ( max-width: 768px )
+  .main
+    background-image: url('/assets/destination/background-destination-tablet.jpg')
+  .nav
+    // position: absolute
+    inset: 0
+    margin: 0 auto
+    width: 17.84375rem
+    top: 35.8125rem
+    display: flex
+    height: 2.125rem
+    justify-content: space-between
+    align-items: center
+    a
+      display: inline-block
+      color: #D0D6F9
+      margin: 0
+      line-height:1.8rem
+      border-bottom: 0.2rem solid transparent
+      border-top: 0.2rem solid transparent
+      &:hover
+        border-bottom: 0.2rem solid #9DA3AD
 @media (max-width:375px)
   .main
     background-image: url('/assets/destination/background-destination-mobile.jpg')
@@ -35,4 +57,4 @@
       border-bottom: 0.2rem solid transparent
       border-top: 0.2rem solid transparent
       margin: 0
-      color:#D0D6F7
+      color: #D0D6F7

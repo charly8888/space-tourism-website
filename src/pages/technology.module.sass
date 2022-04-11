@@ -12,7 +12,7 @@
     text-align: center
     line-height: 4.875rem
     margin: 0 0 2rem 0
-    letter-spacing:-1px
+    letter-spacing: -1px
     font-size: 2rem
     &:hover
       border: 1px solid #fff
@@ -22,6 +22,9 @@
   background-image: url('/assets/technology/background-technology-desktop.jpg')
   background-size: cover
 
+@media ( min-width: 376px ) and ( max-width: 768px )
+  .main
+    background-image: url('/assets/technology/background-technology-tablet.jpg')
 @media (max-width:375px)
   .main
     background-image: url('/assets/technology/background-technology-mobile.jpg')
@@ -46,4 +49,3 @@
 
 @media screen and ( max-width: 768px )
   .nav
-    

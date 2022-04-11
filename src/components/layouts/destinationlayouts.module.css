@@ -44,6 +44,45 @@
   margin:0
 }
 
+@media ( min-width: 376px ) and ( max-width: 768px ){
+  .planet{
+    width: 18.75rem;
+    inset: 0; 
+    margin: 13.75rem auto; 
+    
+  }
+  .art{
+    max-width: 35.8125rem;
+    width:100%;
+    text-align: center;
+    /* height:auto; */
+    inset: 0;
+    top: 39.9375rem;
+    margin: 0 auto;
+  }
+  .art h2{
+    font-size:5rem;
+    line-height:auto
+  }
+  .text{
+    letter-spacing: 0;
+    margin:  1rem 0 2rem 0;
+    font-size: 1rem;
+    line-height:1.75rem;
+    color:#D0D6F7
+  }
+  .section article{
+    margin:2rem 2.5rem;
+    
+    /* width: 100%; */
+  }
+  .section article:last-child{
+    margin:2rem 2.5rem;
+  }
+  .subheading2{
+    color:#D0D6F7
+  }
+}
 @media (max-width:375px){
   .planet{
     width: 10.625rem;
