@@ -5,6 +5,15 @@
   top:24.1875rem;
   left:10.3125rem;
 }
+.containerText h5{
+  letter-spacing:0.295rem;
+  color:#D0D6F9
+}
+.containerText p{
+  color: #D0D6F9;
+  line-height:1.75rem;
+  margin: 0;
+}
 @media ( min-width: 376px ) and ( max-width: 768px ){
   .containerText{
     text-align: center;
@@ -19,7 +28,6 @@
   .containerText h5{
     font-size: 1.25rem;
     letter-spacing:0.21125rem;
-    color:#D0D6F9
   }
   .containerText h1{
     font-size: 9.375rem;
@@ -27,7 +35,6 @@
   }
   .containerText p{
     font-size:1rem ;
-    color: #D0D6F9;
     line-height:1.75rem;
     margin: 0;
   }
@@ -46,14 +53,12 @@
   .containerText h5{
     font-size: 1rem;
     letter-spacing:2.7px;
-    color:#D0D6F9
   }
   .containerText h1{
     font-size: 5rem;
   }
   .containerText p{
     font-size: 0.9375rem ;
-    color: #D0D6F9;
     line-height:1.5625rem;
   }
 }
