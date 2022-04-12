@@ -9,10 +9,13 @@
   letter-spacing:0.295rem;
   color:#D0D6F9
 }
+.containerText h1{
+  letter-spacing:0.295rem;
+}
 .containerText p{
   color: #D0D6F9;
   line-height:1.75rem;
-  margin: 1.2rem 0;
+  margin: 1.5rem 0;
 }
 @media ( min-width: 376px ) and ( max-width: 768px ){
   .containerText{
